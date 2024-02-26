@@ -13,4 +13,12 @@ public class PlayAudioTrigger : MonoBehaviour
             audioSource.Play();
         }
     }
+
+    public void Stop()
+    {
+        if (audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
 }
