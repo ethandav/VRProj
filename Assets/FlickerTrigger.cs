@@ -6,12 +6,16 @@ public class DetectPlayer : MonoBehaviour
 {
     public FlickerLight flickerLight;
     public GarbageMan garbageMan;
+    public PlayAudioTrigger audioTrigger;
+    public PlayAudioTrigger musicTrigger;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             flickerLight.DisableLight();
+            audioTrigger.Trigger();
+            musicTrigger.Trigger();
             garbageMan.Disable();
         }
     }
