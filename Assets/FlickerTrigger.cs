@@ -9,6 +9,13 @@ public class DetectPlayer : MonoBehaviour
     public PlayAudioTrigger audioTrigger;
     public PlayAudioTrigger musicTrigger;
 
+    private Collider trigger;
+
+    private void Start()
+    {
+        trigger = GetComponent<Collider>();
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -28,6 +35,7 @@ public class DetectPlayer : MonoBehaviour
             flickerLight.StartFlickering();
             garbageMan.MoveToPosition(new Vector3(-48.0f, 8.0f, 1.0f));
             garbageMan.Enable();
+            trigger.enabled = false;
         }
     }
 }
