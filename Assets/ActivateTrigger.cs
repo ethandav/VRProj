@@ -6,10 +6,11 @@ public class ActivateTrigger : MonoBehaviour
 {
     public bool disableAfterActivation = false;
     public Collider targetTrigger;
+    public string ActivatorTag = "";
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(ActivatorTag))
         {
             targetTrigger.GetComponent<Collider>().enabled = true;
         }
@@ -17,7 +18,7 @@ public class ActivateTrigger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(ActivatorTag))
         {
             if(disableAfterActivation)
             {

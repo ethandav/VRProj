@@ -8,6 +8,7 @@ TagManager:
   - Grass
   - Indoor
   - TargetMesh
+  - TrashBag
   layers:
   - Default
   - TransparentFX
