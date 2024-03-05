@@ -3056,7 +3056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b18cf68397ce641a42f82694d1e297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelName: 
+  nextLevelName: Level2
   exit: {fileID: 214311104}
 --- !u!65 &214311107
 BoxCollider:
@@ -28999,7 +28999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 645aa53e4f433d948992c07a4cc0fc45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: 
+  text: SUNDAY
   fadeDuration: 2
   displayTime: 2
 --- !u!225 &2012725884
