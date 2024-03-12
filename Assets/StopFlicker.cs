@@ -21,6 +21,7 @@ public class StopFlicker : MonoBehaviour
             {
                 flickerLight.StopFlickering();
             }
+            Application.Quit();
             trigger.enabled = false;
         }
     }
